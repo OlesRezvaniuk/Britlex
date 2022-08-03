@@ -21,6 +21,38 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="logo footer__logo logo__header"
+          >Brit<span class="logo--end">lex</span></a
+        >
+        <div class="header__box">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#skills" class="header__link">Skills</a>
+            </li>
+            <li class="header__item">
+              <a href="#about" class="header__link">About Us</a>
+            </li>
+            <li class="header__item">
+              <a href="#price" class="header__link">Pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Contacts</a>
+            </li>
+          </ul>
+          <button type="button" class="header__button">Let’s Talk</button>
+        </div>
+        <button data-modal-open type="button" class="menu">
+          <svg class="menu__icon" width="40px" height="40px">
+            <use href="./img/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <section class="hero">
       <div class="hero__top container">
         <img
@@ -40,7 +72,7 @@
         </div>
       </div>
     </section>
-    <section class="skill">
+    <section class="skill" id="skills">
       <h2 class="skills__main">Skills</h2>
       <div class="skills skills__container">
         <ul class="skills skills__list">
@@ -106,7 +138,7 @@
         </ul>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title">About Us</h2>
         <div class="about__box">
@@ -142,7 +174,7 @@
         </div>
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <h2 class="price__title">Pricing</h2>
         <ul class="price__list">
@@ -186,7 +218,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contacts">
       <div class="container">
         <h2 class="contact__title">Contact Us</h2>
         <div class="contact__box">
@@ -225,5 +257,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop backdrop__container is-hidden" data-modal>
+      <div class="container"></div>
+      <button data-modal-close type="button" class="close__button">
+        <svg class="close__icon" width="40px" height="40px">
+          <use href="./img/symbol-defs.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
