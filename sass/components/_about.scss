@@ -1,0 +1,170 @@
+.about {
+    position: relative;
+    padding-top: 50px;
+    @media screen and (min-width: 575px) {
+        padding-top: 84px;
+    }
+    @media screen and (min-width: 767px) {
+        padding-top: 52px;
+    }
+    @media screen and (min-width: 992px) {
+        padding-top: 106px;
+    }
+    @media screen and (min-width: 1600px) {
+        padding-top: 195px;
+    }
+    &__container {
+        display: block;
+        text-align: center;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 80px;
+        color: #000000;
+        margin-bottom: 24px;
+        @media screen and (min-width: 575px) {
+            font-size: 30px;
+        }
+        @media screen and (min-width: 767px) {
+            font-size: 36px;
+            margin-bottom: 13px;
+            text-align: start;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 36px;
+            margin-bottom: 23px;
+            text-align: start;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 48px;
+            margin-bottom: 110px;
+            text-align: start;
+        }
+    }
+    &__box {
+        text-align: center;
+    }
+    &__img {
+        margin-bottom: 20px;
+        @media screen and (min-width: 575px) {
+            width: 352px;
+        }
+        @media screen and (min-width: 767px) {
+            width: 295px;
+            position: absolute;
+            top: 88px;
+        }
+        @media screen and (min-width: 992px) {
+            width: 336px;
+            position: absolute;
+            top: 195px;
+        }
+        @media screen and (min-width: 1600px) {
+            width: 500px;
+            position: absolute;
+            top: 200px;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        color: #8F95A5;
+        margin-bottom: 10px;
+        @media screen and (min-width: 575px) {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 767px) {
+            text-align: start;
+            margin-bottom: 30px;
+            display: block;
+            width: 321px;
+        }
+        @media screen and (min-width: 992px) {
+            width: 528px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @media screen and (min-width: 1600px) {
+            width: 635px;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 39px;
+        }
+    }
+    // padding-left: 15px;
+    // padding-right: 15px;
+
+    &__list {
+        list-style: none;
+        padding-left: 0px;
+        @media screen and (min-width: 575px) {
+            display: flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__item {
+        margin-bottom: 40px;
+        @media screen and (min-width: 767px) {
+            margin-bottom: 0px;
+        }
+    }
+    &__number {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: #2A3246;
+        @media screen and (min-width: 992px) {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        @media screen and (min-width: 992px) {
+            margin-bottom: 25px;
+            font-size: 48px;
+        }
+        
+    }
+    &__info {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #8F95A5;
+        @media screen and (min-width: 575px) {
+            font-size: 14px;
+            line-height: 21px;
+            color: #8F95A5;
+            opacity: 0.52;
+        }
+        @media screen and (min-width: 767px) {
+            font-size: 13px;
+            line-height: 20px;
+        }
+        @media screen and (min-width: 992px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @media screen and (min-width: 1600px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    &__box {
+        @media screen and (min-width: 767px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+    &__bottom {
+        margin-right: auto;
+    }
+}
